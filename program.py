@@ -42,6 +42,11 @@ class CaloriesCalculator(Calculator):
 
         return res_
 
+    def get_today_stats(self):
+        return ''
+
+    def get_week_stats(self):
+        return ''
 
 class CashCalculator(Calculator):
     
@@ -73,6 +78,12 @@ class CashCalculator(Calculator):
         else:
             res_ = f'Денег нет, держись: твой долг - {self.limit - spent} {currency}'
         return res_
+
+    def get_today_stats(self):
+        return ''
+
+    def get_week_stats(self):    
+        return ''
 
 
 

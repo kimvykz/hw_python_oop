@@ -88,6 +88,7 @@ class CashCalculator(Calculator):
     def add_record(self, someone):
         res_ = [someone.amount, someone.comment, someone.date]
         #print(res_)
+        #print(type(someone))
         self.transactions_.append(res_)
         
 
